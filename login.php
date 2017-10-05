@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 //connexion a la base
-$bdd = new PDO('mysql:host=localhost;dbname=base', 'root', 'Zart10tom!');
+$bdd = new PDO('mysql:host=localhost;dbname=base', 'user', 'mdp');
 
 //check pour pseudo
         if((isset($_POST['pseudo'])) AND (isset($_POST['password'])))
